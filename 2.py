@@ -45,8 +45,8 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.pushButton.setStyleSheet('QPushButton {background-color: #e32636; color: white; font-size: 17px;}')
 
     def run(self, qp):
-        qp.setBrush(QColor(randrange(10, 255), randrange(10, 255), randrange(10, 255)))
-        d = randrange(20, 400)
+        qp.setBrush(QColor(randrange(0, 255), randrange(0, 255), randrange(0, 255)))
+        d = randrange(10, 400)
         x = randrange(0, 800 - d)
         y = randrange(0, 600 - d)
         qp.drawEllipse(x, y, d, d)
